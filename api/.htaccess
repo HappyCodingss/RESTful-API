@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^albums/?$ actions.php [NC,L]
+RewriteRule ^albums/([0-9]+)/?$ actions.php?id=$1 [NC,L]
+RewriteRule ^songs/?$ songActions.php [NC,L]
+RewriteRule ^songs/([0-9]+)/?$ songActions.php?id=$1 [NC,L]
